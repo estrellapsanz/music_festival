@@ -33,6 +33,20 @@
  object-fit: cover;
 }
 
+.cover__about {
+ display: none;
+
+ @media only screen and (max-device-width:$mq-min-width) {
+  display: block;
+  margin-top: 5%;
+  margin-right: 4%;
+  margin-bottom: 2%;
+  margin-left: 4%;
+  line-height: 1.3;
+  text-align: justify;
+ }
+}
+
 .cover__button {
  right: 1em;
  bottom: 1em;
