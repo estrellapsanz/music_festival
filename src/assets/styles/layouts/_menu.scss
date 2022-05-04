@@ -2,7 +2,7 @@
  padding: auto;
  border-bottom-style: solid;
 
- @media only screen and (max-device-width:860px) {
+ @media only screen and (max-device-width:$mq-max-width-mobile) {
 
   &__list {
    display: flex;
