@@ -1,0 +1,36 @@
+/*
+* Page History: type article
+*/
+
+.history-h1 {
+ margin-top: 2%;
+ margin-bottom: 2%;
+ margin-left: 7%;
+}
+
+.history--p {
+ margin-top: 2%;
+ margin-right: 2%;
+ margin-bottom: 2%;
+ margin-left: 2%;
+ text-align: justify;
+}
+
+.history__article-fig {
+ display: flex;
+ column-gap: 2%;
+ justify-content: center;
+
+ @media only screen and (max-device-width:860px) {
+  flex-flow: row;
+  row-gap: 10px;
+ }
+}
+
+.history__article-fig--img {
+ max-width: 100%;
+
+ @media only screen and (max-device-width:860px) {
+  max-width: 100%;
+ }
+}

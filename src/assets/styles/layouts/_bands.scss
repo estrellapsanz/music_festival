@@ -1,0 +1,79 @@
+/*
+* Page Bands & Artists: flex
+*/
+
+/*Blocks*/
+
+.cartel {
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: center;
+ max-width: 100%;
+
+ @media only screen and (max-device-width:860px) {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+ }
+}
+
+/*Elements*/
+
+.cartel-h1 {
+ margin-top: 2%;
+ margin-bottom: 2%;
+ margin-left: 7%;
+
+ @media only screen and (max-device-width:860px) {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+ }
+}
+
+.cartel__grupo {
+ max-width: 30%;
+ padding-top: 3%;
+ text-decoration: none;
+
+ @media only screen and (max-device-width:860px) {
+  max-width: 100%;
+ }
+}
+
+.cartel__picture {
+ display: flex;
+ flex-flow: column;
+ justify-content: center;
+}
+
+.cartel__imagen {
+ max-width: 96%;
+
+ @media only screen and (max-device-width:$mq-min-width) {
+  max-width: 100%;
+ }
+}
+
+/*Modifiers*/
+
+.cartel__grupo--center {
+ text-align: center;
+}
+
+.cartel__grupo--info {
+ color: $secondary;
+ border-top: 1px solid $secondary;
+ border-right: 1px solid $secondary;
+ border-bottom: 1px solid $secondary;
+ border-left: 1px solid $secondary;
+}
+
+.cartel__grupo--p {
+ margin-top: 2%;
+ margin-right: 4%;
+ margin-bottom: 2%;
+ margin-left: 4%;
+ text-align: justify;
+}

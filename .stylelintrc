@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "stylelint-config-recommended-scss",
+    "stylelint-config-recess-order"
+  ],
+  "rules": {
+    "comment-no-empty": true,
+    "block-no-empty": true,
+    "declaration-block-no-duplicate-properties": true,
+    "named-grid-areas-no-invalid": true,
+    "color-no-invalid-hex": true,
+    "font-family-no-duplicate-names": true,
+    "declaration-colon-space-after": "always",
+    "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$"
+  }
+}

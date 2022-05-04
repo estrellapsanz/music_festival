@@ -1,0 +1,53 @@
+/**
+ * Use this file to import partials.
+ * Do not  include SCSS code in this   file.
+ */
+
+
+/**
+* Boostrap redefinition of variables (for personalization)
+*/
+
+$primary: #ff00ff;
+$secondary:aqua;
+$card-border-color: #ff00ff;
+$list-group-bg: transparent;
+$list-group-color:$primary;
+
+@import "bootstrap/scss/bootstrap";
+
+
+/**
+ * Import variables
+ */
+
+@import 'variables';
+
+
+
+/**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+
+@import 'npm:@fortawesome/fontawesome-free/css/all.css';
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+
+/*In that order*/
+
+@import 'layouts/common';
+@import 'layouts/menu';
+@import 'layouts/footer';
+@import 'layouts/home';
+@import 'layouts/bands';
+@import 'layouts/history';
+@import 'layouts/wannaplay';
+@import 'layouts/documentation';
+
+/**
+ * Do NOT include anything else in this file!
+ */

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Estrella Parrilla Sanz" />
+    <meta name="description" content="PEC2 Asignatura Herramientas HTML y CSS II" />
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+    <title>¿Quieres tocar?</title>
+  </head>
+  <body>
+   <script type="module" src="/src/assets/scripts/main.js"></script>
+   <include src="../src/views/partials/menu.html"></include>
+    <div class="container">
+      <h1 class="form-h1">Take part of Valley</h1>
+      <br>
+      <div>
+        <p>If you want to take part in one of the three secondary stages of Valley Festival,
+          please contact with the organization sending your contact info. We will
+          select the three best artists/bands between all the participants.
+        </p>
+      </div>
+      <form name="contact-to-play" method="POST" data-netlify="true">
+        <div class="mb-3">
+          <label class="form-label" for="name" >Artist/Band Name</label>
+          <input  class="form-control" id="name"  name="bandname" type="text" aria-describedby="nameHelp" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="email" required>Email</label>
+          <input class="form-control" id="email" name="emailname" type="email" >
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="youtube" required>Youtube channel</label>
+          <input class="form-control" id="youtube" name="url_youtube" type="text" >
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="motivation" >Motivation</label>
+          <textarea class="form-control" id="motivation" name="motivation" rows="4" required>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input class="form-check-input" id="exampleCheck1" name="new" type="checkbox" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <label class="form-check-label" for="exampleCheck1">Accept term ands conditions</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send</button>
+
+      </form>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="exampleModalLabel">Accept terms and conditions</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+            Your Terms and Conditions agreement will be uniquely yours. While some clauses are standard and commonly seen in pretty much every Terms and Conditions agreement, it's up to you to set the rules and guidelines that the user must agree to.
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Accept</button>
+           </div>
+         </div>
+       </div>
+      </div>
+      <br>
+
+      <h2>See stages where you could play!</h2>
+      <br>
+      <p>You can choose one of our secondary stages to play if you are selected. Remember all the bands who had become famous here! </p>
+      <div  class="carousel slide carousel-fade" id="carouselExampleCaptions" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/src/assets/images/elijah-ekdahl-8XxF2kYHIgo-unsplash.jpg" alt="image of stage1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Stage 1: "The Teatre"</h5>
+              <p>This is the most known stage for novels bands.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/src/assets/images/magnus-lunay-LHR6tUw8N34-unsplash.jpg" alt="image of stage2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Stage 2: "The Sky"</h5>
+              <p>Bands like "The Good Girls" have played there.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/src/assets/images/david-von-diemar-0BZcsD8UVmM-unsplash.jpg"  alt="image of stage3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Stage 3: "The Plato"</h5>
+              <p>Retransmited on TV!.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+     </div>
+   <include src="../src/views/partials/footer.html"></include>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "name": "pec2-herramientas-html-css-2-uoc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Boilerplate for Advanced HTML/CSS Tools",
+  "scripts": {
+    "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
+    "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
+    "clean": "rimraf dist .cache .cache-loader .parcel-cache",
+    "dev": "npm-run-all clean parcel:serve",
+    "build": "npm-run-all clean stylelint parcel:build",
+    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'",
+    "stylelint": "stylelint src/**/*.scss"
+  },
+  "web": "dist/index.html",
+  "targets": {
+    "web": {
+      "context": "browser",
+      "publicUrl": "./",
+      "engines": {
+        "browsers": "last 2 versions, > 0.5%, not dead"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/estrellapsanz/pec2_music_festival.git"
+  },
+  "author": {
+    "name": "Estrella Parrilla",
+    "email": "estrella.psanz@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estrellapsanz/pec2_music_festival/issues"
+  },
+  "homepage": "https://github.com/estrellapsanz/pec2_music_festival#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.2.0",
+    "autoprefixer": "^10.4.2",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.2.0",
+    "postcss": "^8.4.12",
+    "postcss-preset-env": "^7.3.1",
+    "posthtml-include": "^1.7.2",
+    "rimraf": "^3.0.2",
+    "sharp": "^0.29.3",
+    "stylelint": "^14.6.0",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-recommended-scss": "^5.0.2",
+    "stylelint-scss": "^4.1.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.0.0",
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.1.3"
+  }
+}
